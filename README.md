@@ -1,5 +1,5 @@
 # Smart Contracts using Web3.js and Infura
-`Web3.js` is a collection of libraries which allow you to interact with a local or remote Ethereum node using an HTTP or IPC connection. In this exercise, we will use `web3.js` to deploy a contract on the Ethereum Ropsten testnet and play with it. We will first compile a contract, deploy it and finally call some of the contract’s functions. In order for web3 to connect to the Ropsten testnet, we will use Infura.io API as our provider.
+`Web3.js` is a collection of libraries which allow you to interact with a local or remote Ethereum node using an HTTP or IPC connection. In this exercise, we will use `web3.js` to deploy a contract on the Ethereum Ropsten testnet and play with it. We will first compile a contract, deploy it and finally call some of the contract’s functions. In order for web3 to connect to the Ropsten testnet, we will use `Infura.io` API as our provider.
 
 ## Requirements
 * Node 	v13.5.0
@@ -108,9 +108,9 @@ Run app.js:
 $ node app.js
 ```
 We expect this transaction to _fail_ as it was executed using a `non-owner` account.
-The transaction has been reverted and we see that the status flag is false to indicate that this transaction did not succeed. Take a look at Etherscan to see more transaction details:
+The transaction has been `reverted` and we see that the status flag is false to indicate that this transaction did not succeed. Take a look at Etherscan to see more transaction details:
 ```
-https://ropsten.etherscan.io/tx/<TRANSACTION-HASH>
+https://ropsten.etherscan.io/tx/<FAILED-TRANSACTION-HASH>
 ```
  
 ## Retrieving Information
